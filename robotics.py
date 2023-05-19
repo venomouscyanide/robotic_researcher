@@ -120,6 +120,7 @@ class Robot:
         col_value_elements = row.find_all('td')
         col_value = [ele.text.strip() for ele in col_value_elements]
         col_value_str = " ".join(col_value)
+        # adapted from https://stackoverflow.com/a/38871907
         date = col_value_str[col_value_str.find("(") + 1:col_value_str.find(")")]
         date = dateparser.parse(date)
         return date, col_value_str
