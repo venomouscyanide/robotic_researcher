@@ -138,7 +138,7 @@ class Robot:
                 break
         return first_para
 
-    def __print_gathered_data(self, age: int, first_para: str, scientist_name: str) -> None:
+    def __print_gathered_data(self, age: float, first_para: str, scientist_name: str) -> None:
         """
         Present the crawled data to the user
         :param age: Calculate age of the scientist
